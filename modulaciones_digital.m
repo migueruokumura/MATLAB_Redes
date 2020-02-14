@@ -1,6 +1,7 @@
 clc, clear all, close all
 
 %input
+
 datos='00110100010';
 regla_bit_alto = 1;
 %carrier
@@ -8,7 +9,9 @@ Ac=10;
 fc=1000e3;
 thetac=0;
 cpc=15;
+
 %process
+
 ascii = double(datos);
 bits = dec2bin(ascii);
 cadena = reshape(bits',1,[]); %' al final es matriz traspuesta ;[]  para calcular la salida de bits (4*7)
@@ -42,6 +45,7 @@ end
 %carrier
 tc=linspace(0,length(datos)/fc,500);
 carrier= Ac*sin(2*pi*fc*tc+thetac)
+
 %output
 
 titulo=cat(2,'Datos: ',datos)
@@ -50,7 +54,7 @@ subplot(2,1,1),plot(frame)
 xticks(list-100)
 axis([0 length(frame) -1 6])
 grid on
-subplot(2,1,2),plot(carrier) %la de voltaje, no seria voltios
+subplot(2,1,2),plot(carrier) 
 xticks(list-100)
 axis([0 length(carrier) -1 6])
 title('cadena de bits')
