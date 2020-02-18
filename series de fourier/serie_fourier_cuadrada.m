@@ -6,7 +6,9 @@ close all
 
 f = 1;
 can_periodos = 3;
-S=4; %componentes de frecuencias
+S=1000; %componentes de frecuencias
+
+
 % ____________Procesos____________
 
 t = linspace(0,can_periodos/f,500);

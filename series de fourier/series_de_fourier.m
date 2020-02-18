@@ -8,7 +8,7 @@ f = 10e3;
 can_periodos = 5;
 can_frecuencias=5;
 A=10;
-serie='sinusoidal';
+serie='diente';
 
 %process
 w=2*pi*f;
@@ -48,11 +48,11 @@ switch serie
 
     %sinu
     case 'sinusoidal'
-        fsinusoidal = '90';
+        fsinusoidal = '0';
         switch fsinusoidal
             case '0'
                 
-                fourier = A*sin(2*pi*f*t + theta);
+                fourier = A*sin(2*pi*f*t);
                 
             case '90'
                 

@@ -4,16 +4,18 @@ close all
 
 %---------- INPUT ---------------
 
-A = 10; %Amplitud Unidad de voltios
+A = 8; %Amplitud Unidad de voltios
 f = 10e3; %frecuencia Unidad en khz
 theta =0; %angulo
-cant_periodos = 2;
+cant_periodos = 1;
+
+
 %----------- Procesos --------------
+
 t = linspace(0,cant_periodos/f,500); %tiempo (inicia, periodo = 1/frecuencia, resolución de la grafica)
 
-
-
-sinus_0 = A*sin(2*pi*f*t + theta); %Función sinusoidal
+%Función sinusoidal
+sinus_0 = A*sin(2*pi*f*t + theta); %0 grados
 sinus_90 = A*sin(2*pi*f*t + pi/2);
 sinus_180 = A*sin(2*pi*f*t + pi);
 sinus_270 = A*sin(2*pi*f*t + 3*pi/2);

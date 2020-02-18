@@ -5,7 +5,7 @@ close all
 %input
 f = 10e3;
 can_periodos = 5;
-can_frecuencias=5;
+can_frecuencias=1000; %dientes
 A=10;
 
 %process
