@@ -41,7 +41,7 @@ xfm=Ac*sin(2*pi*fc*tc+nfm*xt);
 
 %modulacion pm
 xt_diff=Ax*sin(2*pi*fx*tx+(thetax+pi/2));
-xpm=Ac*sin(2*pi*fc*tc+nfm*xt_diff);
+xpm=Ac*sin(2*pi*fc*tc+npm*xt_diff);
 
 %output
 figure(1)
