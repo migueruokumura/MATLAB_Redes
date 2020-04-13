@@ -44,9 +44,9 @@ for n=1:length(datos)
     end
 end
 if(regla_bit_alto==1)
-    cadenaBits=5*frame; %0 a 5 voltios
+    cadenaBits=5*frame %0 a 5 voltios
 else
-    cadenaBits=5*frameInv;
+    cadenaBits=5*frameInv
 end
 
 tc = linspace(0, 2*length(datos)/fc,length(cadenaBits));

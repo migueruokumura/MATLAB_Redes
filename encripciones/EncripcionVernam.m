@@ -5,13 +5,13 @@ clear all;
 close all;
 a1=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 b1=[0:25];
-word='leyendas';
-code='ratnoiuy';
-display(word);
+tc='tangananica y tanganana';
+code='ratnoiuyuge u aymetpsfy';
+display(tc);
 display(code);
-for ii=1:length(word)
+for ii=1:length(tc)
     for jj=1:length(a1)
-        if word(ii)==a1(jj);
+        if tc(ii)==a1(jj);
             w1(ii)=b1(jj);
         end
         if code(ii)==a1(jj)
